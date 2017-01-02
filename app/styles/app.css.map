@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "file": "app.css",
+  "sources": [
+    "app.scss",
+    "base/_variables.scss",
+    "components/_nav.scss"
+  ],
+  "mappings": "",
+  "names": []
+}
