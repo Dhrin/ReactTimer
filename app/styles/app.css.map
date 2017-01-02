@@ -4,8 +4,9 @@
   "sources": [
     "app.scss",
     "base/_variables.scss",
-    "components/_nav.scss"
+    "components/_nav.scss",
+    "components/_Clock.scss"
   ],
-  "mappings": "",
+  "mappings": ";AEAA,AAAA,QAAQ,EAAE,AAAS,QAAD,CAAC,EAAE,CAAC;EAClB,gBAAgB,EDAb,OAAO,GCCb;;;AAED,AACI,QADI,CACJ,UAAU,CAAC;EACP,KAAK,EDDI,KAAK,GCEjB;;;AAHL,AAKI,QALI,CAKJ,YAAY,CAAC;EACT,WAAW,EAAE,IAAK,GACrB;;;AAGL,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,SAAU,GACrB",
   "names": []
 }

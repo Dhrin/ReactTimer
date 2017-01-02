@@ -1,2 +1,17 @@
+/* line 1, /Users/dhrin_IMAC/Desktop/timer/app/styles/components/_nav.scss */
+.top-bar, .top-bar ul {
+  background-color: #333333; }
+
+/* line 6, /Users/dhrin_IMAC/Desktop/timer/app/styles/components/_nav.scss */
+.top-bar .menu-text {
+  color: white; }
+
+/* line 10, /Users/dhrin_IMAC/Desktop/timer/app/styles/components/_nav.scss */
+.top-bar .active-link {
+  font-weight: bold; }
+
+/* line 15, /Users/dhrin_IMAC/Desktop/timer/app/styles/components/_nav.scss */
+.page-title {
+  margin: 40px auto; }
 
 /*# sourceMappingURL=app.css.map */
