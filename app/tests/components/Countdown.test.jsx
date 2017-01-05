@@ -13,7 +13,7 @@ describe('Countdown', () => {
 
     describe('handleSetCountdown', () => {
     	it('should set state to started and countdown', (done) => {
-    		//done let the test run as step by step
+    		//done let the test run as step by step otherwise it will not and fail
     		var countdown = TestUtils.renderIntoDocument(<Countdown/>);
     		countdown.handleSetCountdown(10);
 
@@ -26,19 +26,61 @@ describe('Countdown', () => {
     			done();
     		}, 1001);
     	});
-    });
 
-    describe('handleSetCountdown', () => {
     	it('should not countdown to -number', (done) => {
-    		//done let the test run as step by step
     		var countdown = TestUtils.renderIntoDocument(<Countdown/>);
     		countdown.handleSetCountdown(1);
 
     		setTimeout(() => {
     			expect(countdown.state.count).toBe(0);
-    			// call done to stop the test
     			done();
     		}, 3001);
     	});
+
+        it('should pause countdown on paused status', (done) => {
+            var countdown = TestUtils.renderIntoDocument(<Countdown/>);
+            countdown.handleSetCountdown(3);
+
+            countdown.handleStatusChange('paused');
+
+            setTimeout(() => {
+                expect(countdown.state.count).toBe(3);
+                expect(countdown.state.countdownStatus).toBe('paused');
+
+                done();
+            }, 1001);
+        });
+
+        it('should reset countdown on stopped', (done) => {
+            var countdown = TestUtils.renderIntoDocument(<Countdown/>);
+            countdown.handleSetCountdown(3);
+
+            countdown.handleStatusChange('stopped');
+
+            setTimeout(() => {
+                expect(countdown.state.count).toBe(0);
+                expect(countdown.state.countdownStatus).toBe('stopped');
+
+                done();
+            }, 1001);
+        });
+
     });
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

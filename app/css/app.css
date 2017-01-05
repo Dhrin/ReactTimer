@@ -22,12 +22,12 @@
   font-size: 2.25rem;
   font-weight: 300; }
 
-.control {
+.controls {
   display: flex;
   justify-content: center; }
-  .control .button {
+  .controls .button {
     padding: .75rem 3rem; }
-  .control .button:first-child {
+  .controls .button:first-child {
     margin-right: 1.5rem; }
 
 /*# sourceMappingURL=app.css.map */
